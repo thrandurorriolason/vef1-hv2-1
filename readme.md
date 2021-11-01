@@ -1,5 +1,7 @@
 # Vefforritun 1, 2021: Hópverkefni 2
 
+[Kynning í fyrirlestri](https://youtu.be/Alsi_j6skHY)
+
 Verkefnið felst í því að smíða _todo vefforrit_ sem geymir stöðu í vafra notanda.
 
 Hugsa má verkefnið sem high-fidelity prótótýpu af vefforritinu sem unnin er samhliða því að vefþjónustur væru búnar til af öðru teymi.

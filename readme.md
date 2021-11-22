@@ -1,3 +1,12 @@
+## Að byrja
+
+Til að byrja með er gott að klóna verkefnið með `git clone url`. Svo er gott að finna verkefnið á skipanalínu og keyra `npm install` til að ná í alla aukapakka.
+
+Svo er gott að gera eigið branch með `git branch ykkar_nafn` og svo `git checkout ykkar_nafn` til þess að vinna í ykkar branch. Þá er hægt að vinna í eigin útgáfu á verkefninu en munið að sameina við nýjustu útgáfu af main þegar það á við.
+
+Allt fyrir neðan er lýsingin hans Óla en svo breytum við því fyrir skilum.
+
+
 # Vefforritun 1, 2021: Hópverkefni 2
 
 [Kynning í fyrirlestri](https://youtu.be/Alsi_j6skHY)

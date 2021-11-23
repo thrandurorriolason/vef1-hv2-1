@@ -8,7 +8,7 @@
     "browser-sync": "browser-sync start --server --files index.html styles.css",
     "sass": "sass styles.scss styles.css",
     "sass-watch": "sass --watch styles.scss styles.css",
-    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "dev": "browser-sync start --server --files main.js **/*.js styles.css index.html",
     "sass-build": "sass styles.scss ./build/styles.css",
     "copy": "cpy ./*.html ./build/",
     "build": "concurrently npm:sass-build npm:copy",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/frg13/vef1-hv2#readme",
   "dependencies": {
-    "browser-sync": "^2.27.5",
+    "browser-sync": "^2.27.7",
     "concurrently": "^6.3.0",
     "cpy-cli": "^3.1.1",
     "gitignore": "^0.7.0",

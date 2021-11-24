@@ -1,4 +1,4 @@
-import { fetchAndRenderData } from "./lib/ui";
+import { fetchAndRenderData } from './lib/ui.js';
 
 const main = document.querySelector('main');
 
@@ -7,7 +7,6 @@ const main = document.querySelector('main');
  */
 function route () {
     fetchAndRenderData(main);
-    // fetch
 }
 
 route();

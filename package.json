@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "browser-sync": "browser-sync start --server --files main.js **/*.js styles.css index.html",
     "sass": "sass styles.scss styles.css",
     "sass-watch": "sass --watch styles.scss styles.css",
-    "dev": "browser-sync start --server --files main.js **/*.js styles.css index.html",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
     "sass-build": "sass styles.scss ./build/styles.css",
     "copy": "cpy ./*.html ./build/",
     "build": "concurrently npm:sass-build npm:copy",
@@ -27,13 +27,15 @@
   "homepage": "https://github.com/frg13/vef1-hv2#readme",
   "dependencies": {
     "browser-sync": "^2.27.7",
-    "concurrently": "^6.3.0",
     "cpy-cli": "^3.1.1",
+    "dart-sass": "^1.25.0",
     "gitignore": "^0.7.0",
+    "node-sass": "^6.0.1",
     "sass": "^1.43.2",
     "stylelintrc": "^1.0.8"
   },
   "devDependencies": {
+    "concurrently": "^6.4.0",
     "stylelint": "^14.0.1",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-config-standard": "^23.0.0"

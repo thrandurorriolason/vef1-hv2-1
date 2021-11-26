@@ -1,0 +1,32 @@
+.checkbox-round {
+    -webkit-appearance: none; /*hides the default checkbox*/
+    height: 15px;
+    width: 15px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border:1px solid black;
+    margin-right: 5px;
+    font-size: 65%;
+  }
+  
+  .checkbox-round:checked {
+    background-color: #0E9700;
+  }
+  
+  .checkbox-round:before {
+    content: "✖";
+    font-size: 11px;
+  }
+  .checkbox-round:checked:before {
+    content: "✔";
+    font-size: 11px;
+  }
+  
+  .checkbox-round:hover {
+    cursor: pointer; 
+    opacity: 0.8;
+  }

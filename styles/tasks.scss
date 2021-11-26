@@ -1,0 +1,23 @@
+//Verkefnin sem þarf að gera
+.task__items{
+    p{
+      margin-left: 20px;
+    }
+    grid-column: 2;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}
+  
+.date__el{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+hr{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    border: 0;
+    border-top: 1px solid #CCC;
+}
+  

@@ -38,12 +38,15 @@ padding-top: 1.5rem;
 //h2 tagið "Verkefnalistinn"
 .layout__header{
   grid-column: 2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 //Flokkarnir vinstra megin á síðunni
 .category__items{
   grid-column: 1;
   grid-row: 2/ span 3 ;
+  margin-left: 1rem;
 }
 
 //Flokkunar takkinn
@@ -56,4 +59,16 @@ padding-top: 1.5rem;
   grid-column: 2;
   padding-bottom: 2rem;
   padding-top: .5rem;
+}
+
+.date__el{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.order__el{
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
 }

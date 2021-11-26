@@ -4,3 +4,6 @@ node_modules
 #Ekki geyma þýddar .css skrár
 styles.css
 styles.css.map
+
+# Þýddar build skrár
+build

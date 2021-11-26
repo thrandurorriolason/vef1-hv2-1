@@ -10,6 +10,12 @@ Verkefnið er vefsíða sem er _todo vefforrit_.
 
 Í _.gitignore_ er tekið fram að hunsa skal skrár sem enda á _.css_ vegna þess að það eru þýddar skrár úr Sass.
 
+Í rótinni er JavaScript-skráin _main.js_ sem sækir gögn og aðrar JavaScript skrár er að finna undir _./lib_. Skrárnar þar eru _data.js_, _helpers.js_ og _ui.js_.
+
+Til að keyra lintera er hægt að keyra `npm run lint` sem keyrir samstundis "lint-scss" og "lint-css" úr _package.json_. Hægt er að keyra annað hvort af þessu með `npm run lint-scss` og `npm run lint-css` ef notandi óskar eftir því.
+
+Til að keyra eslint er það gert með `npm test`.
+
 
 # Nemendur sem unnu verkefnið
 

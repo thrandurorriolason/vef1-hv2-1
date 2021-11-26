@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "eslint *.js **/*.js",
     "browser-sync": "browser-sync start --server --files main.js **/*.js styles.css index.html",
     "sass": "sass styles.scss styles.css",
     "sass-watch": "sass --watch styles.scss styles.css",
@@ -13,7 +13,8 @@
     "copy": "cpy ./*.html ./build/",
     "build": "concurrently npm:sass-build npm:copy",
     "lint-scss": "stylelint styles.scss ./**/*.scss",
-    "lint-css": "stylelint styles.css ./**/*.css"
+    "lint-css": "stylelint styles.css ./**/*.css",
+    "lint": "concurrently npm:lint-scss npm:lint-css"
   },
   "repository": {
     "type": "git",

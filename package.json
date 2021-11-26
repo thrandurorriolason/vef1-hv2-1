@@ -2,7 +2,10 @@
   "name": "hopverkefni2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "eslint *.js **/*.js",
     "browser-sync": "browser-sync start --server --files main.js **/*.js styles.css index.html",

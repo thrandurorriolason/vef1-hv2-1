@@ -15,7 +15,7 @@
     "sass-build": "sass styles.scss ./build/styles.css",
     "copy:html": "cpy ./*.html ./build/",
     "copy:js": "cpy ./*.js ./build/",
-    "build": "concurrently npm:copy:*",
+    "build": "concurrently npm:sass-build npm:copy",
     "lint-scss": "stylelint styles.scss ./**/*.scss",
     "lint-css": "stylelint styles.css ./**/*.css",
     "lint": "concurrently npm:lint-scss npm:lint-css"
